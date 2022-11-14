@@ -1,0 +1,76 @@
+#%RAML 1.0
+title: Calculator
+version: v1
+protocols:
+  - http
+traits:
+  reuse: !include /traits/trait.raml
+
+/addition:
+  get:
+    is:
+      - reuse
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include /example/addition-response.json
+/subtraction:
+  patch:
+    is: [reuse]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include /example/subtraction-response.json
+/multiplication:
+  put:
+    is: [reuse]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include /example/multiplication-response.json  
+/division:
+  delete:
+    is: [reuse]
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include /example/division-response.json   
+      
+              
+            
+
+
+
+
+
+
+
+      
+                                                        
+             
+
+
+          
+                            
+
+             
+             
+
+        
+          
+          
+      
+      
+    
+  
+            
+
+            
+                  
+      
+
+          
